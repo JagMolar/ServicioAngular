@@ -1,0 +1,17 @@
+<!-- <p>user-detail works!</p> -->
+<!-- {{ user | json}} -->
+<div class="row" *ngIf="user">
+    <div class="col-md-10 offset-1">
+        <div class="card text-center">
+            <div class="card-header">
+                {{ user.id}}
+            </div>
+            <div class="card-block">
+                <h4 class="card-title">nombre: {{ user.name}}</h4>
+                <p class="card-text">Email: {{ user.email}}</p>
+                <p class="card-text">Está activo: {{ user.isActive}}</p>
+                <a routerLink="/crud" class="btn btn-primary">Volver al listado</a>
+            </div>
+        </div>
+    </div>
+</div>

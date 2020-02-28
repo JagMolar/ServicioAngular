@@ -1,0 +1,12 @@
+<div class="row" *ngIf="user">
+    <div class="col-md-6 offset-md-3">
+        <app-user-form
+         [h1Text]="'Editar Usuario'" 
+         [user]="user" 
+         [submitText]="'Editar'" 
+         (onSubmit)="update($event)"
+         >
+
+        </app-user-form>
+    </div>
+</div>
